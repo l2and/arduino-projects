@@ -5,7 +5,7 @@ Control a USB switch using 2 adafruit RF feathers
 
 ## Parts needed
 * 2x [Adafruit Feather RadioFruit](https://www.adafruit.com/product/3077)
-* [Flora RGB NeoPixel](https://www.adafruit.com/product/1260)
+* 6x [Flora RGB NeoPixel](https://www.adafruit.com/product/1260)
 * [Adafruit Non-Latching Mini Relay FeatherWing](https://www.adafruit.com/product/2895)
 * [NovelKeys Big Switch](https://novelkeys.com/products/the-big-switch-series?_pos=1&_sid=6101be1e1&_ss=r)
 
