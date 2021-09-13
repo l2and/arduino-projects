@@ -1,4 +1,4 @@
-# USB-Switcher
+# RF USB-Switcher
 ![Big KeyCrappie](../images/big_keycrappie.JPG)
 ## Description
 Control a USB switch using 2 adafruit RF feathers
@@ -8,6 +8,7 @@ Control a USB switch using 2 adafruit RF feathers
 * 6x [Flora RGB NeoPixel](https://www.adafruit.com/product/1260)
 * [Adafruit Non-Latching Mini Relay FeatherWing](https://www.adafruit.com/product/2895)
 * [NovelKeys Big Switch](https://novelkeys.com/products/the-big-switch-series?_pos=1&_sid=6101be1e1&_ss=r)
+* USB switcher
 
 ## Documentation Used
 * [Remote Effects Trigger Box](https://learn.adafruit.com/remote-effects-trigger)
