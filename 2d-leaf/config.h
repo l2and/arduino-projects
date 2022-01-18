@@ -40,3 +40,10 @@ char auth[] = BLYNK_AUTH_TOKEN;
 // Set password to "" for open networks.
 char ssid[] = WIFI_SSID;
 char pass[] = WIFI_PASSWORD;
+
+#include <Adafruit_NeoPixel.h>
+#define BUTTON_PIN   2
+
+#define PIXEL_PIN    10  // Digital IO pin connected to the NeoPixels.
+
+#define PIXEL_COUNT 75  // Number of NeoPixels
