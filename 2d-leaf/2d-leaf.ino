@@ -29,9 +29,6 @@
 #include "credentials.h"
 #include "config.h"
 
-#define BLYNK_TEMPLATE_ID "TMPLU_Zn7I7E"
-#define BLYNK_DEVICE_NAME "2dLeaf"
-
 BLYNK_WRITE(V0) // Executes when the value of virtual pin 0 changes
 {
   if(param.asInt() == 1)

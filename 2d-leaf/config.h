@@ -39,4 +39,4 @@ char auth[] = BLYNK_AUTH_TOKEN;
 // Your WiFi credentials.
 // Set password to "" for open networks.
 char ssid[] = WIFI_SSID;
-char pass[] = WIFI_PASS;
+char pass[] = WIFI_PASSWORD;
