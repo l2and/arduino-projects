@@ -64,6 +64,7 @@ BLYNK_WRITE(V1) // Executes when the value of virtual pin 0 changes
 void setup()
 {
     pinMode(13, OUTPUT); // Initialise digital pin 13 as an output pin
+     digitalWrite(13,LOW); //turn off onboard LED
 
     //NeoPixel
   pinMode(BUTTON_PIN, INPUT_PULLUP);
@@ -84,6 +85,7 @@ void setup()
 void loop()
 {
   Blynk.run();
+  Blynk.syncVirtual(V1);
 }
 
 
@@ -103,11 +105,11 @@ void colorWipe(uint32_t color, int wait) {
 
 // Rainbow cycle along whole strip. Pass delay time (in ms) between frames.
 void rainbow(int wait) {
-  // Hue of first pixel runs 3 complete loops through the color wheel.
+  // Hue of first pixel runs 1 complete loops through the color wheel.
   // Color wheel has a range of 65536 but it's OK if we roll over, so
   // just count from 0 to 3*65536. Adding 256 to firstPixelHue each time
   // means we'll make 3*65536/256 = 768 passes through this outer loop:
-  for(long firstPixelHue = 0; firstPixelHue < 3*65536; firstPixelHue += 256) {
+  for(long firstPixelHue = 0; firstPixelHue < 1*65536; firstPixelHue += 256) {
     for(int i=0; i<strip.numPixels(); i++) { // For each pixel in strip...
       // Offset pixel hue by an amount to make one full revolution of the
       // color wheel (range of 65536) along the length of the strip
