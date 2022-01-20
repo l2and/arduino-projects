@@ -51,8 +51,17 @@ BLYNK_WRITE(V0) // Executes when the value of virtual pin 0 changes
 BLYNK_WRITE(V1) // Executes when the value of virtual pin 0 changes
 {
   if(param.asInt() == 1)
-  {
-          rainbow(10);
+  { 
+    {
+      if(digitalRead(13) == HIGH)
+        { 
+           colorWipe(strip.Color(  255,   200,   0), 50);    // yellow
+        }
+        else
+        {
+          rainbow(20);
+        }
+    }
   }
   else
   {
